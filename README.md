@@ -1,4 +1,4 @@
-##Practica Sistemas Distribuidos
+##Práctica Sistemas Distribuidos
 =
 
 ### DESCRIPCIÓN:
