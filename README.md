@@ -1,5 +1,5 @@
 ##Practica Sistemas Distribuidos
-_
+=
 
 ### DESCRIPCIÓN:
 Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá elegir un tratamiento, y dependiendo del tratamiento se reservarán un número de horas. El sistema indicará horas disponibles y la oferta, si la hubiera, del tratamiento escogido.
