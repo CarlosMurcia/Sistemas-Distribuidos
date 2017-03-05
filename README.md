@@ -17,4 +17,4 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 - Carlos Murcia García, ca.murcia@alumnos.urjc.es, github:CarlosMurcia
 - Rosa Román Martínez, rm.roman@alumnos.urjc.es, github: RosaRM
 
-![DIAGRAMA DE NAVEGACION](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Img%20fase%202/DiagramaNavegacion.png)
+[DIAGRAMA DE NAVEGACION](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Img%20fase%202/DiagramaNavegacion.png)
