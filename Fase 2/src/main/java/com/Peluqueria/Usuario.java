@@ -16,8 +16,8 @@ public class Usuario {
 	private String email;
 	private String telefono;
 
-	public Usuario() {
-
+	public Usuario(){
+		
 	}
 
 	public Usuario(String nombre, String email, String telefono) {
