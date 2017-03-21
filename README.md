@@ -18,7 +18,7 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 - Rosa Román Martínez, rm.roman@alumnos.urjc.es, github: RosaRM
 
 
-__DIAGRAMA DE NAVEGACIÓN,CAPTURAS DE PANTALLA Y DIAGRAMA E/R
+__DIAGRAMA DE NAVEGACIÓN,CAPTURAS DE PANTALLA Y DIAGRAMA E/R__
 
 - [PAGINA PRINCIPAL HOME](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Home.png)
 - [ALTA USUARIO](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Alta%20Usuario.png)
