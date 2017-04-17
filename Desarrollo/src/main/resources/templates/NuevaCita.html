@@ -1,0 +1,100 @@
+
+<html>
+
+	<head>
+		<meta charset="UTF-8"/>
+
+		<style>
+			ul {
+    			list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+    			overflow: hidden;
+    			background-color: #34495E ;
+			   }
+
+			li {
+    			float: left;
+			border-left:1px solid #bbb;
+		           }
+			li:last-child {
+    			border-left: none;
+			   }
+
+			li a {
+    			display: block;
+    			color: white;
+    			text-align: center;
+    			padding: 14px 16px;
+    			text-decoration: none;
+			}
+			li a:hover {
+    			background-color:;
+			}
+			.active {
+    			background-color: #283747;
+			}
+
+		</style>
+	</head>
+
+<body bgcolor="#B2BABB">
+		<ul>
+ 			<li><a>PELUQUERIA SSDD</a></li>
+ 			<li style="float:right"><a class="active" href="/home">Atrás</a></li>
+			
+		</ul>
+	<br />
+
+	<center>
+<h1>Pide tu Cita</h1>
+<form action="/cita/guardada" method="post">
+<select name='dia'>
+   <option value="" selected="selected">Dia</option>
+   <option value="Lunes">Lunes</option> 
+   <option value="Martes">Martes</option> 
+   <option value="Miercoles">Miércoles</option>
+   <option value="Jueves">Jueves</option> 
+   <option value="Viernes">Viernes</option> 
+   <option value="Sabado">Sábado</option>
+   </select>
+  
+
+<select name="hora">
+   <option value="" selected="selected">Hora</option>
+   <option value="10:00 horas">10:00 horas</option> 
+   <option value="11:00 horas">11:00 horas</option> 
+   <option value="12:00 horas">12:00 horas</option>
+   <option value="13:00 horas">13:00 horas</option> 
+   <option value="17:00 horas">17:00 horas</option> 
+   <option value="18:00 horas">18:00 horas</option> 
+   <option value="19:00 horas">19:00 horas</option>   
+</select>
+
+
+
+<select name="profesional">
+   <option value="" selected="selected">Profesional</option>
+   <option value="Ana">Ana</option> 
+   <option value="Alicia">Alicia</option> 
+   <option value="Sonia">Sonia</option>
+   <option value="Esteticista">Esteticista</option>
+   </select>
+   
+   <select name="tratamiento">
+   <option value="" selected="selected">Tratamiento</option>
+   <option value="Lavado">Lavado</option> 
+   <option value="Peinado">Peinado</option> 
+   <option value="Tinte">Tinte</option>
+   <option value="Corte señora">Corte señora</option>
+   <option value="Corte caballero">Corte caballero</option>
+   </select>
+   
+   <input type='submit' value='Enviar'/>
+   <input type="hidden" name="_csrf" value="{{token}}"/>
+	</form> 
+<br><br/>
+</body>
+
+
+</html>

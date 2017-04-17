@@ -1,0 +1,91 @@
+﻿<html>
+
+	<head>
+		<meta charset="UTF-8"/>
+
+		<style>
+			ul {
+    			list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+    			overflow: hidden;
+    			background-color: #34495E ;
+			   }
+
+			li {
+    			float: left;
+			border-left:1px solid #bbb;
+		           }
+			li:last-child {
+    			border-left: none;
+			   }
+
+			li a {
+    			display: block;
+    			color: white;
+    			text-align: center;
+    			padding: 14px 16px;
+    			text-decoration: none;
+			}
+			li a:hover {
+    			background-color:;
+			}
+			.active {
+    			background-color: #283747;
+			}
+
+		</style>
+	</head>
+
+	<body bgcolor="#B2BABB">
+	
+
+
+		<ul>
+ 			<li><a>PELUQUERIA SSDD</a></li>
+			<li style="float:right"><a class="active" href="/opinion">Déjanos tu opinión</a></li>
+			<li style="float:right"><a class="active" href="/usuario">Nuevo Usuario</a></li>
+		</ul>
+	<br />
+
+	<center>
+
+		<form action="/login" method="post">
+		
+			<label>Usuario:</label><input type="text" name="username" />		
+			<label>Contraseña:</label><input type="password" name="password" /><br><br/>
+		
+			<input type="submit" value="Entrar" /><br />				
+		
+			<input type="hidden" name="_csrf" value="{{token}}"/>
+
+		</form>
+		<br></br>
+		<p>Síguenos</p>
+		
+<a href="https://es-la.facebook.com/public/Carlos-Murcia" target="_blank"><img alt="siguenos en facebook" height="32" src="http://2.bp.blogspot.com/-q_Tm1PpPfHo/UiXnJo5l-VI/AAAAAAAABzU/MKdrVYZjF0c/s1600/face.png" title="siguenos en facebook" width="32" /></a>
+
+<a href="https://es.pinterest.com/" target="_blank"><img alt="Sígueme en Pinterest" height="32" src="http://2.bp.blogspot.com/-jKx3RnQCslA/UiYMDLz_40I/AAAAAAAAB9Y/ekDWhiimFuA/s1600/Sin+t%25C3%25ADtulo.png" title="Sígueme en Pinterest" width="32" /></a>
+
+<a href="https://twitter.com/?lang=es" target="_blank"><img alt="siguenos en Twitter" height="32" src="http://3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="siguenos en Twitter" width="32" /></a>
+
+<a href="URL-youtube" target="_blank"><img alt="Canal de youtube" height="32" src="http://4.bp.blogspot.com/-XWyVHd85Urk/UiXnJChMVWI/AAAAAAAABzI/RHztkyc7gAU/s1600/YouTube+alt+1.png" title="Canal de youtube" width="32" /></a>	
+</center>
+<br><br/>
+<b>Opiniones: </b>
+	<p style="border: ridge #34495E 2px;">
+	{{#Opiniones}}
+	{{nombre}}: {{opinion}}<br></br>
+	{{/Opiniones}}
+	</p>
+	<br><br/>
+	<b>Ofertas: </b>
+	<p style="border: ridge #34495E 2px;">
+	{{#oferta}}
+	{{nuevaOferta}} Desde:{{altaOferta}} Hasta: {{bajaOferta}}<br></br>
+	{{/oferta}}
+	</p>
+	
+	</body>
+</html>
+
