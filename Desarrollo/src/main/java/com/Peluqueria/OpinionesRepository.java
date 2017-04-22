@@ -1,8 +1,8 @@
 package com.Peluqueria;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface OpinionesRepository extends CrudRepository<Opiniones, Long> {
+public interface OpinionesRepository extends JpaRepository<Opiniones, Long> {
 	
 
 

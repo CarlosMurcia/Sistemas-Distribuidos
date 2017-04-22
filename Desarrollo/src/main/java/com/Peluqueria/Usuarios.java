@@ -4,14 +4,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+
 
 @Entity
 public class Usuarios {
@@ -23,21 +27,25 @@ public class Usuarios {
 	private String nombre;
 	private String email;
 	private String telefono;
-	private String passwordHash;
+	private String password;
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	private Cita cita;
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<String> roles;
 
-	protected Usuarios() {
+	public Usuarios() {
 	}
 
 	public Usuarios(String nombre, String email, String telefono, String password, String... roles) {
 		this.nombre = nombre;
 		this.email = email;
 		this.telefono = telefono;
-		this.passwordHash = new BCryptPasswordEncoder().encode(password);
+		this.password = new BCryptPasswordEncoder().encode(password);
 		this.roles = new ArrayList<>(Arrays.asList(roles));
 	}
+
 
 	public String getNombre() {
 		return nombre;
@@ -63,12 +71,12 @@ public class Usuarios {
 	}
 
 
-	public String getPasswordHash() {
-		return passwordHash;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPasswordHash(String passwordHash) {
-		this.passwordHash = passwordHash;
+	public void setPassword(String passwordHash) {
+		this.password = new BCryptPasswordEncoder().encode(passwordHash);
 	}
 
 	public List<String> getRoles() {
@@ -78,5 +86,6 @@ public class Usuarios {
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
 	}
+
 
 }

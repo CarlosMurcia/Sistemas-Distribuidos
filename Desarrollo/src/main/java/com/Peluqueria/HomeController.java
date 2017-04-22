@@ -1,6 +1,7 @@
 package com.Peluqueria;
 
 
+import java.util.ArrayList;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
 
 
 @Controller
@@ -31,13 +33,11 @@ public class HomeController {
 		
 		repository1.save (new Opiniones ("Carlos", "Buenisima opinion sobre la aplicación"));
 		repository1.save (new Opiniones ("Rosa", "El personal muy amable"));
-		repository1.save (new Opiniones ("Raul", "Altamente recomendable"));
 		repository2.save (new Cita ("Lunes", "10:00 horas","Ana","Lavar"));
 		repository2.save (new Cita ("Martes", "11:00 horas","Alicia","Peinar"));
-		repository2.save (new Cita ("Miercoles", "12:00 horas","Sonia","Tinte"));
-		repository3.save (new Oferta ("Martes corte caballero mitad de precio", "13/02/2017", "13/03/2017"));
-		repository3.save (new Oferta ("Lavado y tinte 15€", "15/03/2017", "15/04/2017"));
-		repository3.save (new Oferta ("Tratamiento 2x1", "22/05/2017", "30/06/2017"));
+		repository3.save (new Oferta ("Martes corte caballero mitad de precio", "2017/03/27", "2017/04/20"));
+		repository3.save (new Oferta ("Lavado y tinte 15€", "2017/04/15", "2017/05/23"));
+		
 		
 	}
 
@@ -47,14 +47,19 @@ public class HomeController {
     }
     
     @GetMapping("/usuario")
-	public String NuevoUsuario(Model model, Usuarios Usuarios, HttpServletRequest request){
+	public String NuevoUsuario(Model model){
 
-    	repository.save(Usuarios);
 
 		return "NuevoUsuario";
 	}
 	@GetMapping("/usuario/guardado")
-	public String usuarioGuardado() {
+	public String usuarioGuardado(Model model, Usuarios Usuarios) {
+		
+		
+		ArrayList<String> roles = new ArrayList<String>();
+	 	roles.add("ROLE_USER");
+	 	Usuarios.setRoles(roles);
+		repository.save(Usuarios);
 
 		return "UsuarioGuardado";
 
@@ -67,46 +72,60 @@ public class HomeController {
 		return "UsuariosRegistrados";
 
 	}
-	
 	@GetMapping("/opinion")
-	public String NuevaOpinion(Model model, Opiniones Opiniones, HttpServletRequest request){
+	public String NuevaOpinion(Model model){
 
-	    repository1.save(Opiniones);
+	   
 
 		return "NuevaOpinion";
 		}
 	
 	@GetMapping("/opinion/guardada")
-	public String OpinionGuardada() {
+	public String OpinionGuardada(Model model, Opiniones Opiniones) {
 
+		 repository1.save(Opiniones);
+		 
 		return "OpinionGuardada";
 
 		}
 	
 	@GetMapping("/cita")
-	public String NuevaCita(Model model, Cita cita, HttpServletRequest request){
+	public String NuevaCita(){
 
-	    repository2.save(cita);
 
 		return "NuevaCita";
 		}
 	
 	@PostMapping("/cita/guardada")
-	public String CitaGuardada() {
+	public String CitaGuardada(Model model, Cita cita) {
+		
+		repository2.save(cita);
 
 		return "CitaGuardada";
 
 		}
-	@GetMapping("/oferta")
-	public String NuevaOferta(Model model, Oferta oferta, HttpServletRequest request){
+	
+	@GetMapping("/cita/registrada")
+	public String CitaRegistrada(Model model) {
+		model.addAttribute("usuarios", repository.findAll ());
+		model.addAttribute("cita", repository2.findAll ());
 
-	    repository3.save(oferta);
+		return "CitaRegistrada";
+	}
+	
+
+	@GetMapping("/oferta")
+	public String NuevaOferta(){
+
+	    
 
 		return "NuevaOferta";
 		}
 	
 	@GetMapping("/oferta/guardada")
-	public String OfertaGuardada() {
+	public String OfertaGuardada(Model model, Oferta oferta) {
+		
+		repository3.save(oferta);
 
 		return "OfertaGuardada";
 
@@ -137,9 +156,8 @@ public class HomeController {
     public String home(Model model, HttpServletRequest request) {
     	
     	model.addAttribute("admin", request.isUserInRole("ADMIN"));
-    	model.addAttribute("usuarios", repository.count());
-    	model.addAttribute("Opiniones", repository.findAll ());
-    	model.addAttribute("oferta", repository.findAll ());
+    	model.addAttribute("cita", repository2.findAll ());
+    	
     	
     	return "Home";
     }
