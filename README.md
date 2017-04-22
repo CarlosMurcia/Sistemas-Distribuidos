@@ -18,7 +18,7 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 - Rosa Román Martínez, rm.roman@alumnos.urjc.es, github: RosaRM
 
 
-CAPTURAS DE PANTALLA FASE 3
+CAPTURAS DE PANTALLA FASE 3 Y DIAGRAMA E/R
 
 - [INDEX-BIENVENIDA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/index.jpg)
 - [LOGIN-PAG.PRINCIPAL](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/login.jpg)
@@ -33,5 +33,7 @@ CAPTURAS DE PANTALLA FASE 3
 - [AREA PRIVADA ADMIN](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Area%20privada%20admin.jpg)
 - [ADMINISTRADOR](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Administrador.jpg)
 - [REG.USUARIOS](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Registro%20de%20usuarios.jpg)
+- [REG.CITAS](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Registro%20de%20citas.jpg)
 - [INTR.OFERTA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Introducir%20oferta.jpg)
 - [OFERTA GUARDADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Oferta%20guardada.jpg)
+- [DIAGRAMA E/R](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Diagrama%20ER.jpg)
