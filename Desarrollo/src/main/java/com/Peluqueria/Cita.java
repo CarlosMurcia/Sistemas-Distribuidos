@@ -28,6 +28,7 @@ public class Cita {
 		this.profesional = profesional;
 		this.tratamiento = tratamiento;
 	}
+	
 
 	public String getDia() {
 		return dia;

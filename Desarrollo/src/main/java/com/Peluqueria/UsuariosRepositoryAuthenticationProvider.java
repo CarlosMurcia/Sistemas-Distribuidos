@@ -30,7 +30,7 @@ public class UsuariosRepositoryAuthenticationProvider implements AuthenticationP
 		}
 
 		String password = (String) auth.getCredentials();
-		if (!new BCryptPasswordEncoder().matches(password, usuarios.getPasswordHash())) {
+		if (!new BCryptPasswordEncoder().matches(password, usuarios.getPassword())) {
 			throw new BadCredentialsException("Contraseña no válida");
 		}
 
