@@ -18,11 +18,26 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 - Rosa Román Martínez, rm.roman@alumnos.urjc.es, github: RosaRM
 
 
-__DIAGRAMA DE NAVEGACIÓN,CAPTURAS DE PANTALLA Y DIAGRAMA E/R__
+### CAPTURAS DE PANTALLA FASE 3 Y DIAGRAMA E/R
 
-- [PAGINA PRINCIPAL HOME](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Home.png)
-- [ALTA USUARIO](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Alta%20Usuario.png)
-- [CITA PREVIA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Cita.png)
-- [OFERTAS](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Oferta.png)
-- [OPINIONES](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/Opiniones.png)
-- [DIAGRAMA E/R](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Fase%202/Imagenes/DiagramaER.png)
+- [INDEX-BIENVENIDA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/index.jpg)
+- [LOGIN-PAG.PRINCIPAL](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/login.jpg)
+- [ALTA USUARIO](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Alta%20usuario.jpg)
+- [USUARIO DESCONEC](https://github.com/CarlosMurcia/SistemasDistribuidos/blob/master/Desarrollo/Imagenes/Usuario%20Desconectado.jpg)
+- [USUARIO GUARDADO](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Usuario%20guardado.jpg)
+- [OPINION](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Opinion.jpg)
+- [OPINION GUARDADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Opinion%20guardada.jpg)
+- [AREA PRIVADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Area%20privada.jpg)
+- [PEDIR CITA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Pedir%20cita.jpg)
+- [CITA GUARDADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Cita%20guardada.jpg)
+- [AREA PRIVADA ADMIN](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Area%20privada%20admin.jpg)
+- [ADMINISTRADOR](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Administrador.jpg)
+- [REG.USUARIOS](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Registro%20de%20usuarios.jpg)
+- [REG.CITAS](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Registro%20de%20citas.jpg)
+- [INTR.OFERTA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Introducir%20oferta.jpg)
+- [OFERTA GUARDADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Oferta%20guardada.jpg)
+- [DIAGRAMA E/R](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Diagrama%20ER.jpg)
+
+### INSTRUCCIONES AZURE
+
+- [AZURE](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Instrucciones%20despliegue%20Azure.pdf)
