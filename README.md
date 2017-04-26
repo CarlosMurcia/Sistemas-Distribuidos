@@ -40,4 +40,4 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 
 ### INSTRUCCIONES AZURE
 
--[AZURE](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Instrucciones%20despliegue%20Azure.pdf)
+- [AZURE](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Instrucciones%20despliegue%20Azure.pdf)
