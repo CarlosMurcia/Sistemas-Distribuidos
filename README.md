@@ -18,7 +18,7 @@ Web dedicada a la reserva de cita de una peluquería. Cada reserva, permitirá e
 - Rosa Román Martínez, rm.roman@alumnos.urjc.es, github: RosaRM
 
 
-CAPTURAS DE PANTALLA FASE 3 Y DIAGRAMA E/R
+### CAPTURAS DE PANTALLA FASE 3 Y DIAGRAMA E/R
 
 - [INDEX-BIENVENIDA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/index.jpg)
 - [LOGIN-PAG.PRINCIPAL](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/login.jpg)
@@ -37,3 +37,7 @@ CAPTURAS DE PANTALLA FASE 3 Y DIAGRAMA E/R
 - [INTR.OFERTA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Introducir%20oferta.jpg)
 - [OFERTA GUARDADA](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Oferta%20guardada.jpg)
 - [DIAGRAMA E/R](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Desarrollo/Imagenes/Diagrama%20ER.jpg)
+
+### INSTRUCCIONES AZURE
+
+-[AZURE](https://github.com/CarlosMurcia/Sistemas-Distribuidos/blob/master/Instrucciones%20despliegue%20Azure.pdf)
