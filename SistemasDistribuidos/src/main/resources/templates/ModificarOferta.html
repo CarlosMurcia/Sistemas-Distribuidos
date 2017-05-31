@@ -41,27 +41,27 @@
 <body bgcolor="#B2BABB">
 		<ul>
  			<li><a>PELUQUERIA SSDD</a></li>
- 			<li style="float:right"><a class="active" href="/login">Atrás</a></li>
+ 			
 			
 		</ul>
 	<br />
 
 	<center>
-<h1>Alta Usuario</h1>
-	<form action="/usuario/guardado" >
-		<p>Nombre: </p>
-		<input type='text' name='nombre'/>
-		<p>Email:</p>
-		<input type='text' name='email'/>
-		<p>Telefono:</p>
-		<input type='number' name='telefono'/>
-		<p>Contraseña:</p>
-		<input type='password' name='password'/>
-		<br></br>
-		<input type='submit' value='Enviar'/>
-		<input type="hidden" name="_csrf" value="{{token}}"/>
-	</form>
 	
-</body>
+<h1>Modificar Oferta</h1>
+	<form action="/oferta/modificada">
+		<label>Oferta:</label><input type='text' name='nuevaOferta'/>
+        <label>Desde:</label> <input type="date" pattern="yyyy-MM-dd" name='altaOferta' />
+        <label>Hasta:</label> <input type="date" pattern="yyyy-mm-dd"  name='bajaOferta'/>
+        <br></br>
+        <input type='submit' value='Enviar'/>
+        <input type="hidden" name="_csrf" value="{{token}}"/>
+	</form>
+	</center>
+	
+	
 
+</body>
 </html>
+
+

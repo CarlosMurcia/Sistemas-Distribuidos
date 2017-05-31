@@ -4,7 +4,6 @@ package com.Peluqueria;
 import java.util.ArrayList;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,8 +34,8 @@ public class HomeController {
 		repository1.save (new Opiniones ("Rosa", "El personal muy amable"));
 		repository2.save (new Cita ("Lunes", "10:00 horas","Ana","Lavar"));
 		repository2.save (new Cita ("Martes", "11:00 horas","Alicia","Peinar"));
-		repository3.save (new Oferta ("Martes corte caballero mitad de precio", "2017/03/27", "2017/04/20"));
-		repository3.save (new Oferta ("Lavado y tinte 15€", "2017/04/15", "2017/05/23"));
+		//repository3.save (new Oferta ("Corte caballero a mitad de precio", "2017/03/27", "2017/04/20"));
+		//repository3.save (new Oferta ("Lavado y tinte 15€", "2017/04/15", "2017/05/23"));
 		
 		
 	}
@@ -52,7 +51,7 @@ public class HomeController {
 
 		return "NuevoUsuario";
 	}
-	@GetMapping("/usuario/guardado")
+	@PostMapping("/usuario/guardado")
 	public String usuarioGuardado(Model model, Usuarios Usuarios) {
 		
 		
@@ -115,9 +114,9 @@ public class HomeController {
 	
 
 	@GetMapping("/oferta")
-	public String NuevaOferta(){
+	public String NuevaOferta(Model model){
 
-	    
+		model.addAttribute("oferta", repository3.findAll ());
 
 		return "NuevaOferta";
 		}
@@ -129,6 +128,24 @@ public class HomeController {
 
 		return "OfertaGuardada";
 
+		}
+	@GetMapping("/modificar/oferta")
+	public String ModificarOferta(Model model,Oferta oferta) {
+		
+		
+		repository3.delete(oferta);
+
+			return "ModificarOferta";
+		
+		}
+	@GetMapping("/oferta/modificada")
+	public String OfertaModificada(Model model, Oferta oferta) {
+		
+		
+		repository3.save(oferta);
+
+		return "OfertaModificada";
+		
 		}
 
     @GetMapping("/login")
